@@ -1,7 +1,9 @@
-# LeetCode
-- Clicking the problem will take you to the LeetCode website.
-- Clicking the solution language will take you to my solution for that problem.
-### Algorithms
+# LeetCode  
+***
+### Algorithms  
+- Click a problem to go to the LeetCode website  
+- Click a solution to see my solution  
+
 |   # |                      Problem                      |              Solution              |  Difficulty  |
 |----:|:-------------------------------------------------:|:----------------------------------:|:------------:|
 |   1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [C++](./solutions/0001_Two_Sum.md) |     Easy     |
