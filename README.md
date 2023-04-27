@@ -1,5 +1,5 @@
 # LeetCode  
-***
+
 ### Algorithms  
 - Click a problem to go to the LeetCode website  
 - Click a solution to see my solution  
