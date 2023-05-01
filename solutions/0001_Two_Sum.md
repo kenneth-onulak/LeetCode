@@ -38,24 +38,23 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         
-        std::vector<int> result;               // store and return the two integers that sum to the target
-        std::unordered_map< int, int > values; // store integers for faster lookup
+        std::vector<int> result;               // store and return the two integer indices that sum to the target
+        std::unordered_map< int, int > values; // store integer and index for faster lookup
         
-        // iterate over all integers looking for sum to the target
+        // iterate over all integers looking for the target sum
         for ( int i = 0; i < nums.size(); ++i )
         {       
-            // search for the value that sums to the target
+            // check if the sum exists
             int difference = target - nums[i];
             auto found = values.find( difference );
             
-            // stop once two values sum to the target
             if ( found != values.end() )
-            {
+            {   // found the result, stop iterating
                 result.push_back( found->second );
                 result.push_back( i );
                 break;
             }
-            // add the current value and continue
+            // no result, update and continue
             values.insert( {nums[i], i} );
         }
         
